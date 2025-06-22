@@ -1,0 +1,151 @@
+.student-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.student-icon {
+  color: #6b7280;
+}
+
+.student-name {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1f2937;
+}
+
+.student-details {
+  margin: 0.25rem 0 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-button {
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.action-button:hover {
+  background-color: #f3f4f6;
+}
+
+.delete-button {
+  color: #ef4444;
+  border-color: #fecaca;
+}
+
+.delete-button:hover {
+  background-color: #fef2f2;
+}
+
+.subjects {
+  margin-bottom: 1rem;
+}
+
+.subject-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.subject-row:last-child {
+  border-bottom: none;
+}
+
+.subject-name {
+  color: #374151;
+}
+
+.subject-mark {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.result-summary {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.summary-item:last-child {
+  margin-bottom: 0;
+}
+
+.summary-label {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.summary-value {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.grade {
+  color: #7c3aed;
+}
+
+.pass {
+  color: #10b981;
+}
+
+.fail {
+  color: #ef4444;
+}
+
+@media (max-width: 480px) {
+  .student-card {
+    padding: 1rem;
+  }
+  
+  .student-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .actions {
+    align-self: flex-end;
+  }
+}
